@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Diagram_Laser_Texture.PNG" type="Texture" id=1]
+[ext_resource path="res://Laser/Textures/Laser_Center.png" type="Texture" id=2]
+[ext_resource path="res://Laser/Textures/Laser_left.png" type="Texture" id=3]
+
+[node name="Diagram_Texture" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 470.547, 293.552 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 343.675
+margin_top = 394.568
+margin_right = 647.675
+margin_bottom = 493.568
+text = "Make a 3  x 1 pixel texture with a 'glow' effect.  Slice the texture into two.  One will be the end and one will be the center, which will be scaled in the x direction to grow/shrink based on the laser.  Ensure that several fully transparent pixels are on the side or aliasing will be visible.  The center should only be 1 pixel wide.  The laser scene has 3 images - left, center, right.  Right has 'flip_H' enabled.  In the game, the textures will do something similar to the \"Final\" above."
+autowrap = true
+
+[node name="Center" type="Label" parent="."]
+margin_left = 548.443
+margin_top = 79.0334
+margin_right = 852.443
+margin_bottom = 178.033
+text = "center"
+autowrap = true
+
+[node name="End" type="Label" parent="."]
+margin_left = 356.249
+margin_top = 80.8296
+margin_right = 660.249
+margin_bottom = 179.83
+text = "end"
+autowrap = true
+
+[node name="Final" type="Label" parent="."]
+margin_left = 595.743
+margin_top = 149.825
+margin_right = 899.743
+margin_bottom = 248.825
+text = "Final"
+autowrap = true
+
+[node name="center" type="Sprite" parent="."]
+position = Vector2( 610.993, 181.403 )
+scale = Vector2( 10, 5 )
+texture = ExtResource( 2 )
+
+[node name="left_end" type="Sprite" parent="."]
+position = Vector2( 601.856, 181.445 )
+scale = Vector2( 1, 5 )
+texture = ExtResource( 3 )
+
+[node name="right_end" type="Sprite" parent="."]
+position = Vector2( 619.727, 181.654 )
+scale = Vector2( 1, 5 )
+texture = ExtResource( 3 )
+flip_h = true

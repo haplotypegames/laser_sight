@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Laser/laser.gd" type="Script" id=1]
+[ext_resource path="res://Laser/mat_laser.tres" type="Material" id=2]
+[ext_resource path="res://Laser/Textures/Laser_Center.png" type="Texture" id=3]
+[ext_resource path="res://Laser/Textures/Laser_left.png" type="Texture" id=4]
+
+[node name="Line" type="Node2D"]
+visible = false
+script = ExtResource( 1 )
+
+[node name="Center" type="Sprite" parent="."]
+material = ExtResource( 2 )
+texture = ExtResource( 3 )
+
+[node name="Left" type="Sprite" parent="."]
+material = ExtResource( 2 )
+texture = ExtResource( 4 )
+
+[node name="Right" type="Sprite" parent="."]
+material = ExtResource( 2 )
+position = Vector2( -0.0347691, -0.017385 )
+texture = ExtResource( 4 )
+flip_h = true

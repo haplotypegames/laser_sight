@@ -23,3 +23,4 @@ Implementation of a laser sight in the Godot Engine.  Created using v3.1 release
    2. Move the player using the arrow keys ("ui_*" mappings).  
    3. Press LMB to toggle the laser on/off.
  
+- Acknowledgment - Idea for making the texture images this way came from the tutorial at: https://gamedevelopment.tutsplus.com/tutorials/how-to-generate-shockingly-good-2d-lightning-effects--gamedev-2681
